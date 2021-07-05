@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 107px;
+  height: 100%;
+  box-shadow: -6px 0px 20px 0px;
+  background: #ffffff;
+  
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 20px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+  width:50%;
+}
+
+.wrapper .sidebar ul li a .fa{
+
+width:50%;
+
+    font-size: 26px;
+    margin: 0 0 3px 16px;
+
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #e7e4f8;
+    
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: black;
+}
+ 
+.wrapper .sidebar .social_media {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+
+
+.wrapper .main_content{
+  width: 100%;
+ margin-left: 120px;
+}
+
+
+.wrapper .main_content .header{
+  /* padding: 20px; */
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+
+  margin-left: -120px;
+  padding: 29px;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+}
+.container {
+width:90%;
+height:40px; background-color:white;
+display:flex;
+align-items:center;
+padding:10px;
+margin-left: 90px;
+}
+.container > input
+{
+flex:1;
+height:30px;
+border:none;
+outline:none;
+font-size:18px;
+}
+.upload {
+width:15%;
+height:150px;
+background-color:white;
+display:flex;
+align-items:center;
+padding:10px;
+margin-left: 120px;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><img src="logo.jpg" style="width:80px"></a></li>
+            <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>student</a></li>
+            <li><a href="#"><i class="fa fa-address-card"></i>Lesson Plan</a></li>
+            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>settings</a></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header"></div>  
+        <div class="info">
+       <div class="video">
+        <ul>
+        <li><a href="#"><i class="fa fa-play" aria-hidden="true"></i>Video</a></li>
+       </ul>
+       </div>
+       <div class="container">
+       <input type="text" name="search" placeholder="Insert URL here">
+      </div>
+     </div><br><br>
+      <div>
+      <p style="text-align:center">or</p>
+      </div><br><br>
+     <div class="upload">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+
+   
+     </div>
+    </div>
+</div>
+</body>
+</html>
